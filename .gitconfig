@@ -1,0 +1,30 @@
+[user]
+        name = Andres Mancera
+        email = andy_mancera@yahoo.com
+[alias]
+        st = status -s -b
+        lg = log --pretty=format:'%C(yellow)%h %C(green)%ad %C(magenta)%d: %C(cyan)[%cn] %C(reset)%s' --decorate --date=local --name-status
+        ls = ls-tree master --name-only
+        plg = !git lg origin/master..HEAD
+        pl = !git pull && git submodule update --init --recursive
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = auto
+        ui = true
+        pager = true
+[color "status"]
+        changed = cyan
+        untracked = magenta
+[core]
+        editor = vim
+[diff]
+        tool = tkdiff
+[difftool]
+        prompt = false
+[merge]
+        tool = meld
+        conflictstyle = diff3
+[push]
+        default = simple
