@@ -1,0 +1,3 @@
+diff -Nur originalfile newfile > patchfile
+
+patch originalfile patchfile
