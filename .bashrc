@@ -22,6 +22,10 @@ HISTFILESIZE=2000
 # add time stamps to the history
 HISTTIMEFORMAT="%m/%d %R "
 
+# search history with arrows
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
 # Trailing directory components to retain when expanding the \w and \W
 PROMPT_DIRTRIM=3
 
