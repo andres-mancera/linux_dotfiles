@@ -14,7 +14,8 @@ setenv  BLOCKSIZE       K
 setenv HOSTNAME `hostname`
 #set prompt = "%B$HOSTNAME <\!>%b "
 #set prompt="\n%B%{\033[34m%}[%h] %d %D.%w.%Y %P\n%{\033[31m%}[%n][%m][%~]\n%{\033[30m%}%b"
-set prompt="%B%{\033[32m%}[%m %l] %Y.%W.%D %T [%C]\n%{\033[32m%}[%h]%b "
+#set prompt="%B%{\033[32m%}[%m %l] %Y.%W.%D %T [%C]\n%{\033[32m%}[%h]%b "
+set prompt="%B%{\033[32m%}%n@%m [%t]\n%{\033[34m%}[%h] %C3 $ "
 
 # General aliases
 alias h		    history 25
