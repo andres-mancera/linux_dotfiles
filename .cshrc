@@ -17,6 +17,11 @@ setenv HOSTNAME `hostname`
 #set prompt="%B%{\033[32m%}[%m %l] %Y.%W.%D %T [%C]\n%{\033[32m%}[%h]%b "
 set prompt="%B%{\033[32m%}%n@%m [%t]\n%{\033[34m%}[%h] %C3 $ "
 
+# search history with arrows
+bindkey "^R" i-search-back
+bindkey -k up history-search-backward
+bindkey -k down history-search-forward
+
 # General aliases
 alias h		    history 25
 alias j		    jobs -l
